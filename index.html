@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Celulares</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="shortcut icon" href="static/img/cms_icon.jpg" type="image/x-icon">
+    
+</head>
+<body>
+
+    <header id="home">
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#acerca-de-nosotros">Acerca de</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#wsp">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>CMS Celulares</h1>
+            <h2>Servicio Técnico Multimarca</h2>
+            <h3>Valdivia</h3>
+          </section>
+          <div style="height: 150px; overflow: hidden;" class="wave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="acerca-de-nosotros">
+            <h2 class="titulo">Acerca de nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img class="imagen-about-us" src="static/img/repair-phone.png" alt="">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Mision</h3>
+                    <p>Somos una pyme valdiviana, enfocada a brindar el mejor servicio, prestando especial atencion a cada detalle.</p>
+                    <h3><span>2</span>Servicio de calidad</h3>
+                    <p>En CMS Celulares siempre nos hemos destacado por ser pioneros en el rubro, constantemente estamos innovando en herramientas, equipamiento y conocimiento
+                        que nos permitan perpetuar nuestra marca de calidad a lo largo de los años.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="portafolio"> 
+            <div class="contenedor ">
+                <h2 class="titulo">Portafolio</h2><a id="Portafolio" title="portafolio"></a> 
+                <div class="galeria-port">
+                    <div id="galeria" class="center">
+                        <div id="galeria_imagen">
+                          <img id="imgGaleria" class="img-center" src="../static/img/work-phone01.jpg" />
+                        </div>
+                        <div id="galeria_miniaturas">
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery01.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery02.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery03.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery04.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery05.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery06.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery07.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery08.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery09.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery010.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery011.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery012.jpeg" />
+                          <img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="../static/img/gallery/gallery013.jpeg" />
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services" id="servicios">
+            <a name="Servicios"></a>
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="static/img/ilustracion-repair.jpg" alt="">
+                        <h3>Diagnostico</h3>
+                        <p>Contamos con las herramientas adecuadas para realizar un diagnostico efectivo acerca de la falla de su smartphone.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="static/img/ilustracion-repair-01.jpg" alt="">
+                        <h3>Cambio de pantallas</h3>
+                        <p>Disponemos de un amplio stock de pantallas para diferentes marcas y modelos, ademas tenemos la opción de traer su pantalla
+                        si no la tenemos en el momento.
+                        </p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="static/img/ilustracion-repair-02.jpg" alt="">
+                        <h3>Mutiples reparaciones</h3>
+                        <p>Nuestro técnico esta prearado para realizar diferentes reparaciones en la placa electronica de su movil, reemplazo de modulo de carga,
+                            jack de audio, soldadura de precisión, recuperación por humedad y un amplio etc. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wsp-position" id="wsp">
+                <h3>Cotiza ahora mismo!</h3>
+                <a href="https://wa.me/56977346706/?text=Cotiza%20con%20nosotros%20te%20esperamos%20atentos!" target="_blank">
+                    <img src="static/img/logowsp.png" width="50" height="50">
+                 </a>
+            </div>
+            
+        </section>
+        <section>
+            <div class="contenedor-mapa">
+                <h3>Encuentranos en Pueblito Comercial Local 7 Valdivia</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191.54444724054576!2d-73.24194327544429!3d-39.81347046591342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee778d05a2f5%3A0x528d0bdc99c9abe3!2sPueblito%20Comercial%20Valdivia!5e0!3m2!1ses!2scl!4v1630348631414!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="clientes contenedor" id="clientes">
+            <h2 class="titulo">Que dicen nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="static/img/face1.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Lorenzo Martini</h4>
+                        <p>Un servicio rapido, entregan garantía sobre su trabajo y puedes ver lo que hace el tecnico en todo momento. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="static/img/face2.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Marcela Fuezalida</h4>
+                        <p>Estoy muy contenta, en otros locales me cobraban un cambio de pantalla sin siquiera intentar recuperar el repuesto que se mojó, muy buenos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>Cel +56 9 7734 6706</p>    
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>cms.reparacionmovil@gmail.com</p>    
+            </div>
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Pueblito Comercial Local 7</p>    
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Diseñado por Jorge Fuentes</h2>
+    </footer>
+</body>
+</html>

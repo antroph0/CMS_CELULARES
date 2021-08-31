@@ -1,0 +1,567 @@
+@font-face{
+    font-family: "Kostel_Infinity_Sans";
+    src: url("..static/font/Kostel_Infinity_Sans") format("truetype");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+    background-image:url("../img/pngegg4.png");
+    background-repeat:  repeat;
+    
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "Kostel Infinity Sans";
+}
+
+/*Header  CSS*/
+
+header {
+    width: 100%;
+    height: 500px;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(40, 92%, 58%, 0.438), hsla(13, 97%, 55%, 0.514)),url(../img/portada-work-phone.jpg);
+    background: linear-gradient(to right, hsla(40, 92%, 58%, 0.438), hsla(13, 97%, 55%, 0.514)),url(../img/portada-work-phone.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:white; 
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration:underline; 
+    animation: escalar 1s infinite ;
+}
+/*26/08/2021: Se agrega el estilo para el texto del header.*/
+
+header .textos-header {
+    font-family: "kostel Infinity Sans";
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+   
+    font-size: 70px;
+    color: azure;
+    text-shadow: 3px 3px 3px black;
+}
+
+.textos-header h2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: azure;
+    text-shadow: 2px 2px 2px black;
+
+}
+.textos-header h3 {
+    font-size: 20px;
+    font-weight: 300;
+    color: azure;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+
+
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.imagen-about-us{
+    width: 48%;
+    animation: escalar 1.5s infinite alternate ;
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #fc4a1a;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0,0, .5);
+    margin-right: 5px;
+}
+.contenido-textos p {
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Galeria de fotos*/
+
+.portafolio {
+    background: #f2f2f2;
+}
+
+
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0,0, .5);
+}
+.imagen-port > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color:hsla(13, 97%, 55%, 0.514);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: white;
+
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clientes */
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background:hsla(13, 97%, 55%, 0.856);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: white;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*Team*/
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+/*wsp*/
+.wsp-position{
+    padding: 20px;
+    text-align: center;
+    animation: escalar1 1.5s infinite alternate ;
+}
+@keyframes escalar1 {
+    to {
+        transform: scale(1);
+    }from{
+        transform: scale(1.1);
+    }
+}
+.fab {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    filter: brightness(70%);
+    
+    }
+    
+    .fab:hover {
+    opacity: 0.7;
+    filter: brightness(100%);
+    }
+    
+    .fa-whatsapp {
+    background: #45bbff;
+    color: white;
+    
+    }
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 50px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #fc4a1a;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size:18px;
+    margin: 15px 0 0 0;
+    color: #9e9797;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .galeria-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+#galeria, #galeria * {
+	box-sizing:border-box; /*el padding y el border se incluyen en el ancho y el alto*/
+    object-fit: fill;
+}
+#galeria {
+	border: 1px solid #EAEAEA;  /* Borde de la galería */
+	padding: 10px;
+	padding-bottom: 0;
+	background: #F2F2F2;  /* Fondo de la galería */
+	width: auto;  /* Ancho de la galería */
+    cursor: pointer;
+}
+
+@keyframes escalar {
+    to {
+        transform: scale(1);
+    }from{
+        transform: scale(1.02);
+    }
+}
+#galeria_miniaturas {
+	display: table;
+	margin: 0 auto;
+}
+#imgGaleria {
+	display: block;
+	border: 1px solid #F2F2F2;  /* Borde de la imagen */
+	padding: 3px;
+    height: 600px;
+    width: auto;
+	object-fit: fill;
+
+
+}
+																															/* Clases css */
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+.img-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.miniatura {
+	width: 90px;  /* Ancho de las miniaturas */
+	height:  70px;  /* Alto de las miniaturas */
+	float: left;
+	cursor: pointer;
+	padding: 5px;
+	margin: 10px 5px;
+    filter: brightness(70%);
+}
+.miniatura:hover {
+	filter: brightness(100%);   /* Opacidad */
+
+}
+.miniatura:active {
+	filter: brightness(70%);
+}
+
+/*MAPA*/
+
+.contenedor-mapa{
+    font-size: 20px;  
+    text-align: center;   
+    border-radius: 50%;
+    filter: brightness(70%);
+}
+.contenedor-mapa:hover{
+  
+    filter: brightness(100%);
+}
+.contenedor-mapa h3{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
